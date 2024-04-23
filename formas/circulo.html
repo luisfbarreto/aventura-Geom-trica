@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aventura Geoméatrica</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+body{
+  background-color: #131313;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(30, 255, 0);
+    font-size: 50px;
+    border: solid 5px rgb(255, 0, 0) ;
+    align-items: center;
+    font-family: "Jersey 10", sans-serif;
+    margin-bottom: 20px;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+}
+.img2{
+    width: 100px;
+    height: 150px;
+}
+
+.formas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form{
+    width: 300px;
+    height: 300px;
+    padding: 20px 150px 20px 150px;
+}
+
+.formas, h2{
+    color: white;
+    text-align: center ;
+}
+
+.btnCirculo{
+    background-color: #00000000;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popCirculo{
+    width: 250px;
+    height: 100px;
+    
+}
+
+.raioCirculo{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.calculo{
+    display: flex;
+    flex-direction: column;
+}
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <img class="img1" src="../img/mario.gif" alt="mario"> 
+          <h1>Hora de calcular!</h1>    
+          <img class="img2" src="../img/knuckles.gif" alt="knuckles">
+    </div>
+    <a href="../index.html"><button class="btnVoltar">Voltar</button></a>
+    
+    <div class="formas">
+
+    <img class="form" src="../img/circle.png" alt="circulo">
+    <div class="calculo">
+        <label class="raioCirculo" for="raioCirculo">Digite o Raio do Círculo</label>
+        <input type="number" id="raioCirculo" name="" placeholder="Raio do Círculo" required />
+      </div>
+
+        <button id="btnCalcular" onclick="calcularAreaCirculo()">Calcular</button>
+     
+      <h3 id="resultadoCirculo"></h3>
+      <br>
+    </div>  
+      <script src="../js/script.js"></script>
+</body>
+</html>

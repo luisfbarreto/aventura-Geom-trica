@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+body{
+  background-color: #131313;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(30, 255, 0);
+    font-size: 50px;
+    border: solid 5px rgb(255, 0, 0) ;
+    align-items: center;
+    font-family: "Jersey 10", sans-serif;
+    margin-bottom: 20px;
+}
+
+.img1{
+    width: 150px;
+    height: 200px;
+}
+.img2{
+    width: 100px;
+    height: 150px;
+}
+
+.formas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.form{
+    width: 300px;
+    height: 300px;
+    padding: 20px 150px 20px 150px;
+}
+
+.form:hover{
+    border: 1px solid white;
+    border-radius: 200px;
+    background-image: url('../img/galaxy.jpg');
+    transform: scale(1.1);
+    color: #131313;
+    transition: 1s;
+}
+.formas, h2{
+    color: white;
+    text-align: center ;
+}
+
+.btnCirculo{
+    background-color: #00000000;
+    border-style: none;
+    cursor: pointer;
+}
+
+.popCirculo{
+    width: 250px;
+    height: 100px;
+    
+}
+
+.raioCirculo{
+    font-weight: bolder;
+    font-size: 20px;
+}
