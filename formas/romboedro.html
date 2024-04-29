@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aventura Geoméatrica - Circulo</title>
+    <title>Aventura Geoméatrica - Retângulo</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
@@ -53,9 +53,11 @@ body{
 .calculo{
     display: flex;
     flex-direction: column;
+    
 }
 
 .forma{
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -74,15 +76,23 @@ body{
     
     <div class="formas">
 
-    <img class="form" src="../img/circle.png" alt="forma">
+    <img class="form" src="../img/romboedro.png" alt="forma">
     <div class="calculo">
-        <label class="forma" for="raioCirculo">Digite o Raio do Círculo</label>
-        <input type="number" id="raioCirculo" name="" placeholder="Digite o raio do Círculo" required />
+        <label class="forma" for="romboedroMaior">Digite a diagonal maior do Romboedro</label>
+        <input type="number" id="romboedroMaior" name="" placeholder="Diagonal maior do Romboedro" required />
+      </div>
+      <div class="calculo">
+        <label class="forma" for="romboedroMenor">Digite a diagonal menor do Romboedro</label>
+        <input type="number" id="romboedroMenor" name="" placeholder="Diagonal menor do Romboedro" required />
+      </div>
+      <div class="calculo">
+        <label class="forma" for="romboedroAltura">Digite a altura do Romboedro</label>
+        <input type="number" id="romboedroAltura" name="" placeholder="Altura do Romboedro" required />
       </div>
 
-        <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaCirculo()">Calcular</button>
+        <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaRomboedro()">Calcular</button>
      
-      <h3 id="resultadoCirculo"></h3>
+      <h3 id="resultadoRomboedro"></h3>
       <br>
     </div>  
       <script src="../js/script.js"></script>

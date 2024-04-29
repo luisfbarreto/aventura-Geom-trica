@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aventura Geoméatrica - Circulo</title>
+    <title>Aventura Geoméatrica - Retângulo</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
@@ -53,9 +53,11 @@ body{
 .calculo{
     display: flex;
     flex-direction: column;
+    
 }
 
 .forma{
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -74,15 +76,23 @@ body{
     
     <div class="formas">
 
-    <img class="form" src="../img/circle.png" alt="forma">
+    <img class="form" src="../img/trapezoideIrregular.png" alt="forma">
     <div class="calculo">
-        <label class="forma" for="raioCirculo">Digite o Raio do Círculo</label>
-        <input type="number" id="raioCirculo" name="" placeholder="Digite o raio do Círculo" required />
+        <label class="forma" for="baseMaior">Digite a base maior do Trapezio</label>
+        <input type="number" id="baseMaior" name="" placeholder="base maior do trapezio" required />
+      </div>
+      <div class="calculo">
+        <label class="forma" for="baseMenor">Digite a base menor do Trapezio</label>
+        <input type="number" id="baseMenor" name="" placeholder="Diagonal menor do Romboedro" required />
+      </div>
+      <div class="calculo">
+        <label class="forma" for="trapezoideAltura">Digite a altura do trapezio</label>
+        <input type="number" id="trapezoideAltura" name="" placeholder="Altura do Trapezio" required />
       </div>
 
-        <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaCirculo()">Calcular</button>
+        <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaTrapezoide()">Calcular</button>
      
-      <h3 id="resultadoCirculo"></h3>
+      <h3 id="resultadoTrapezoide"></h3>
       <br>
     </div>  
       <script src="../js/script.js"></script>
