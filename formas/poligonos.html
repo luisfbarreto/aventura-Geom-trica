@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aventura Geoméatrica - Retângulo</title>
+    <link rel="shortcut icon" href="../img/hexagono.png" type="image/png">
+    <title>Aventura Geoméatrica - Polígonos</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
@@ -44,7 +45,11 @@ body{
     height: 300px;
     padding: 20px 150px 20px 150px;
 }
-
+.form1{
+    width: 400px;
+    height: 400px;
+    padding: 20px 150px 20px 150px;
+}
 
 .formas, h2{
     color: white;
@@ -67,6 +72,37 @@ body{
     font-weight: bolder;
     font-size: 20px;
 }
+.input{
+    border: 20px solid white;
+    border-radius: 30px;
+}
+
+.calculo{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.btnCalcular{
+    margin-top: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    border: 10px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btnVoltar {
+    background-color: #000000;
+    border: 10px solid #ee0000;
+    border-radius: 0px 100px 100px 0px;
+    height: 85px;
+    width: 113px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
     </style>
   </head>
   <body>
@@ -79,14 +115,14 @@ body{
     
     <div class="formas">
 
-    <img class="form" src="../img/heptagono.png" alt="forma">
+    <img class="form1" src="../img/heptagono.png" alt="forma">
     <div class="calculo">
         <label class="forma" for="heptagonoBase">Digite a base do Heptagono</label>
-        <input type="number" id="heptagonoBase" name="" placeholder="Base do Heptagono" required />
+        <input class="input" type="number" id="heptagonoBase" name="" placeholder="Base do Heptagono" required />
       </div>
       <div class="calculo">
         <label class="forma" for="heptagonoAltura">Digite a Altura do Heptagono</label>
-        <input type="number" id="heptagonoAltura" name="" placeholder="Altura do Heptagono" required />
+        <input class="input" type="number" id="heptagonoAltura" name="" placeholder="Altura do Heptagono" required />
       </div>
 
         <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaHeptagono()">Calcular</button>
@@ -99,11 +135,11 @@ body{
         <img class="form" src="../img/pentagono.png" alt="cubo">
         <div class="calculo">
             <label class="forma" for="pentagonoBase">Digite a base do Pentagono</label>
-            <input type="number" id="pentagonoBase" name="" placeholder="Base do Pentagono" required />
+            <input class="input" type="number" id="pentagonoBase" name="" placeholder="Base do Pentagono" required />
           </div>
           <div class="calculo">
             <label class="forma" for="pentagonoAltura">Digite a Altura do Pentagono</label>
-            <input type="number" id="pentagonoAltura" name="" placeholder="Altura do Pentagono" required />
+            <input class="input" type="number" id="pentagonoAltura" name="" placeholder="Altura do Pentagono" required />
           </div>
     
             <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaPentagono()">Calcular</button>
@@ -116,11 +152,11 @@ body{
             <img class="form" src="../img/hexagono.png" alt="cubo">
             <div class="calculo">
                 <label class="forma" for="hexagonoBase">Digite a base do retângulo</label>
-                <input type="number" id="hexagonoBase" name="" placeholder="Base do retângulo" required />
+                <input class="input" type="number" id="hexagonoBase" name="" placeholder="Base do retângulo" required />
               </div>
               <div class="calculo">
                 <label class="forma" for="hexagonoAltura">Digite a Altura do retângulo</label>
-                <input type="number" id="hexagonoAltura" name="" placeholder="Altura do retângulo" required />
+                <input class="input" type="number" id="hexagonoAltura" name="" placeholder="Altura do retângulo" required />
               </div>
         
                 <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaHexagono()">Calcular</button>

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aventura Geoméatrica - Retângulo</title>
+    <link rel="shortcut icon" href="../img/romboedro.png" type="image/png">
+    <title>Aventura Geoméatrica - Romboedro</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
@@ -61,8 +62,35 @@ body{
     margin-bottom: 20px;
 }
 
+.input{
+    border: 20px solid white;
+    border-radius: 30px;
+}
+
+.calculo{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+}
+
 .btnCalcular{
     margin-top: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    border: 10px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btnVoltar {
+    background-color: #000000;
+    border: 10px solid #ee0000;
+    border-radius: 0px 100px 100px 0px;
+    height: 85px;
+    width: 113px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
 }
     </style>
   </head>
@@ -79,15 +107,15 @@ body{
     <img class="form" src="../img/romboedro.png" alt="forma">
     <div class="calculo">
         <label class="forma" for="romboedroMaior">Digite a diagonal maior do Romboedro</label>
-        <input type="number" id="romboedroMaior" name="" placeholder="Diagonal maior do Romboedro" required />
+        <input class="input" type="number" id="romboedroMaior" name="" placeholder="Diagonal maior do Romboedro" required />
       </div>
       <div class="calculo">
         <label class="forma" for="romboedroMenor">Digite a diagonal menor do Romboedro</label>
-        <input type="number" id="romboedroMenor" name="" placeholder="Diagonal menor do Romboedro" required />
+        <input class="input" type="number" id="romboedroMenor" name="" placeholder="Diagonal menor do Romboedro" required />
       </div>
       <div class="calculo">
         <label class="forma" for="romboedroAltura">Digite a altura do Romboedro</label>
-        <input type="number" id="romboedroAltura" name="" placeholder="Altura do Romboedro" required />
+        <input class="input" type="number" id="romboedroAltura" name="" placeholder="Altura do Romboedro" required />
       </div>
 
         <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaRomboedro()">Calcular</button>

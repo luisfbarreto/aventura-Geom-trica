@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aventura Geoméatrica - Retângulo</title>
+    <link rel="shortcut icon" href="../img/trapezoideIrregular.png" type="image/png">
+    <title>Aventura Geoméatrica - Trapezoide</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
@@ -61,8 +62,35 @@ body{
     margin-bottom: 20px;
 }
 
+.input{
+    border: 20px solid white;
+    border-radius: 30px;
+}
+
+.calculo{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+}
+
 .btnCalcular{
     margin-top: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    border: 10px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btnVoltar {
+    background-color: #000000;
+    border: 10px solid #ee0000;
+    border-radius: 0px 100px 100px 0px;
+    height: 85px;
+    width: 113px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
 }
     </style>
   </head>
@@ -79,15 +107,15 @@ body{
     <img class="form" src="../img/trapezoideIrregular.png" alt="forma">
     <div class="calculo">
         <label class="forma" for="baseMaior">Digite a base maior do Trapezio</label>
-        <input type="number" id="baseMaior" name="" placeholder="base maior do trapezio" required />
+        <input class="input" type="number" id="baseMaior" name="" placeholder="base maior do trapezio" required />
       </div>
       <div class="calculo">
         <label class="forma" for="baseMenor">Digite a base menor do Trapezio</label>
-        <input type="number" id="baseMenor" name="" placeholder="Diagonal menor do Romboedro" required />
+        <input class="input" type="number" id="baseMenor" name="" placeholder="Diagonal menor do Romboedro" required />
       </div>
       <div class="calculo">
         <label class="forma" for="trapezoideAltura">Digite a altura do trapezio</label>
-        <input type="number" id="trapezoideAltura" name="" placeholder="Altura do Trapezio" required />
+        <input class="input" type="number" id="trapezoideAltura" name="" placeholder="Altura do Trapezio" required />
       </div>
 
         <button class="btnCalcular" id="btnCalcular" onclick="calcularAreaTrapezoide()">Calcular</button>
